@@ -1,0 +1,40 @@
+{
+  "name": "generic-typeorm-repository",
+  "version": "0.0.6",
+  "description": "A basic package aimed at providing a generic and extendable typeorm repository for nestjs apps.",
+  "files": [
+    "lib",
+    "dist",
+    "index.ts",
+    "index.js"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf dist && tsc -p tsconfig.json",
+    "prepublish": "npm run build"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "^8.0.0 || ^9.0.0 || ^10.0.0",
+    "@nestjs/core": "^8.0.0 || ^9.0.0 || ^10.0.0",
+    "@nestjs/typeorm": "^10.0.2",
+    "reflect-metadata": "^0.1.13 || ^0.2.0",
+    "typeorm": "^0.3.20",
+    "typescript": "^5.4.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmj0502/generic-typeorm-repository.git"
+  },
+  "keywords": [
+    "generic",
+    "typeorm",
+    "nestjs",
+    "typescript"
+  ],
+  "author": "Jorge Juarez <juarezmachadojorgemartin@gmail.com> (jmj0502)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jmj0502/generic-typeorm-repository/issues"
+  },
+  "homepage": "https://github.com/jmj0502/generic-typeorm-repository#readme"
+}
