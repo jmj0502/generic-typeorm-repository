@@ -82,7 +82,7 @@ export class EntityOneRepository extends GenericRepository<EntityOne> {
     }
 }
 ```
-## Contributors
+## Collaborators
 
 <!-- readme: contributors -start -->
 <table>
