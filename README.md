@@ -84,5 +84,22 @@ export class EntityOneRepository extends GenericRepository<EntityOne> {
 ```
 ## Collaborators
 
-<!-- readme: collaborators -start -->
-<!-- readme: collaborators -end -->
+<!-- readme: contributors -start -->
+<table>
+<tr>
+    <td align="center">
+        <a href="https://github.com/jmj0502">
+            <img src="https://avatars.githubusercontent.com/u/50276574?v=4" width="100;" alt="jmj0502"/>
+            <br />
+            <sub><b>Jorge Martin Juarez</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/EliezerSPP">
+            <img src="https://avatars.githubusercontent.com/u/52340161?v=4" width="100;" alt="EliezerSPP"/>
+            <br />
+            <sub><b>Eliezer Peña</b></sub>
+        </a>
+    </td></tr>
+</table>
+<!-- readme: contributors -end -->
