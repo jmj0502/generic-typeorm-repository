@@ -1,6 +1,7 @@
 import { DecoratedEntity } from './DecoratedEntity';
 import {
   DeepPartial,
+  DeleteResult,
   EntityManager,
   FindManyOptions,
   FindOneOptions,
@@ -127,11 +128,21 @@ export abstract class GenericRepository<T extends DecoratedEntity> {
     /**
      * @description Deletes the entity by a given options.
      * @param query {FindOptionsWhere<T>}
+     * @returns {Promise<DeleteResult>}
+     */
+    public async delete(query: FindOptionsWhere<T>): Promise<DeleteResult> {
+        return await this.repository.delete(query);
+    }
+
+    /**
+     * @description Soft-deletes the entity by a given options.
+     * @param query {FindOptionsWhere<T>}
      * @returns {Promise<UpdateResult>}
      */
-    public async delete(query: FindOptionsWhere<T>): Promise<UpdateResult> {
+    public async softDelete(query: FindOptionsWhere<T>): Promise<UpdateResult> {
         return await this.repository.softDelete(query);
     }
+    
 
     /**
      * @description This method returns the count of entities that match the given options.
