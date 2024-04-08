@@ -27,7 +27,7 @@ yarn add generic-typeorm-repository
 - updateMany
 - rawQuery
 - delete
-- hardDelete
+- softDelete
 - count
 
 Is important to notice that this package has a direct dependency from typeorm, so most of the parameters
