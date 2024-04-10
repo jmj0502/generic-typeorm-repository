@@ -1,6 +1,6 @@
 {
   "name": "generic-typeorm-repository",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "A basic package aimed at providing a generic and extendable typeorm repository for nestjs apps.",
   "files": [
     "lib",
